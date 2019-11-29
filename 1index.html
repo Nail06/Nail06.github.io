@@ -1,0 +1,56 @@
+<!doctype html>
+<html><head><title>연습</title><meta charset="utf-8">
+  <style> #gallery{
+  width:950px;
+  height:190px;
+  background:#ff0;
+  border:2px solid black;
+  border-radius:15px;
+}
+  ul {
+  list-style:none;
+}
+  ul li{
+  display:inline;
+  float:left;
+  padding:10px;
+}
+.bigpic {
+  position: absolute;
+  display: none;
+  left: 100px;
+  width: 400px;
+  height: 340px;
+}
+.smallpic{
+  border: 2px dotted red;
+  width: 200px;
+  height: 140px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+      $(document).ready(function () {
+      $("#s1").click(function () {
+             $("#big1").fadeIn(1000);
+            });
+            $("#big1").click(function () {
+                $("big1").fadeout(1000);
+            });
+              });
+</script></head>
+<body>
+        <div id="gallery">
+          <ul>
+            <li>
+            <img src="dog2.png" id="s1" class="smallpic"><br>
+              <img src="dog3.png" id="big1" class="bicpic">
+            </li>
+            <li>
+              <img src="horse1.jpg" id="s4" class="smallpic"><br>
+                <img src="horse".jpg" id="big4" class="bicpic">
+            </li>
+            </ul>
+          </div>
+
+</body></html>
