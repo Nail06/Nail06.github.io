@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="mystyle.css" rel="stylesheet">
+  </head>
+  <style>
+  div {
+
+
+  }
+  form {
+    margin-left: 600px;
+  }
+
+
+  </style>
+  <body>
+    <header>
+      <h1> <img src="dong.png"> </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="fade.html">학부소식</a></li>
+        <li><a href="2.html">공지사항</a></li>
+        <li><a href="move.html">취업정보</a></li>
+      </ul>
+    </nav>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+    $(document).ready(function( ){
+    $("#btn").click(function( ){
+     $("#left").toggle( );
+     $("#btn2").click(function( ){
+      $("#right").toggle( );
+       });
+      });
+});
+            </script>
+            <form>
+              <input type="button" id="btn" value="컴소과 시험표">
+              <input type="button" id="btn2" value="컴정과 시험표">
+            </form>
+            <div>
+              <img src="test1.png" id="left" width="700px" height="500px">
+              <img src="test3.png" id="right"width="700px" height="500px">
+
+            </div>
+            </body>
+   <footer>
+     copyright (a) aaaaaaaaaaaaaaaaa <br>
+     aaaaaaaaaaaaaaaaaaaa
+   </footer>
+
+</html>

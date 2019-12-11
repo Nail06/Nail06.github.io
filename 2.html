@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="mystyle.css" rel="stylesheet">
+  </head>
+  <style>
+  div {
+    text-align: center;
+  }
+  form {
+    margin-left: 600px;
+  }
+  </style>
+  <body>
+    <header>
+      <h1> <img src="dong.png"> </h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="fade.html">학부소식</a></li>
+        <li><a href="2.html">공지사항</a></li>
+        <li><a href="move.html">취업정보</a></li>
+      </ul>
+    </nav>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+          $(document).ready(function () {
+                $("#stoggle").click(function () {
+                    $(".slide").slideToggle(3000);
+                  });
+                  $("#toggle").click(function () {
+                      $(".slide2").slideToggle(3000);
+                    });
+                  });
+                  </script>
+    <form>
+    <input type="button" id="stoggle" value="시간표 사진으로 보기">
+    <input type="button" id="toggle" value="시간표 글로 보기">
+  </form>
+    <div class="slide">
+      <img src="test1.png">
+    </div>
+    <div class="slide2">
+      <h1>전공 시험시간표</h1><br>
+      12/13(금) : 웹프로그래밍 12:00~12:50 1호관 5층 소강당,운영체체실습 13:00~13:50 1호관 5층 소강당<br>
+      12/16(월) : 자료구조 11:00~11:50 1호관 208호 <br>
+      12/13(수) : 정보통신개론 11:00~11:50 1호관 207호,컴퓨터제어실습 14:00~15:50 3호관 210호<br>
+      <width="500" height="600">
+    </div>
+    <footer>
+      copyright (a) aaaaaaaaaaaaaaaaa <br>
+      aaaaaaaaaaaaaaaaaaaa
+    </footer>
+  </body>
+</html>
